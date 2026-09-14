@@ -1,4 +1,4 @@
-</> PHP
+
 <?php
 
 $fornavn = $_POST['fornavn'];
