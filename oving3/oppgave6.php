@@ -1,23 +1,12 @@
 <?php
 
-print("<form method='post'>");
+$tall = $_POST["tall"];
 
-print("skriv inn et positivt heltall: ");
-print("<input type='text' name='tall'>");
+for ($i = 1; $i <= $tall; $i++)
+{
+  print("$i <br>");
+}
 
-print("<input type='submit' value='Send'>");
+?>
 
-print("</form>");
 
-if (isset($_post["tall"]))
-  {
-    $tall = $_post["tall"];
-  
-    for ($i = 1; $i <= $tall; $i++)
-      {
-        print("$i <br>");
-      }
-  }
-
-  ?>
-  
