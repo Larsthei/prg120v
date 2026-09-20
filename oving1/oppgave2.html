@@ -1,25 +1,26 @@
 <!doctype html>
-<html>
+<html lang="no">
   <head>
+    <meta charset="UTF-8" />
     <title>Oppgave 2</title>
   </head>
   <body>
     <h3>Oppgave 2</h3>
-    <form
-      method="post"
-      action="/app/lathe2742-prg120v/oving1/oppgave2.php"
-      id="oppgave2"
-      name="oppgave2"
-    >
-      Tall 1<input type="text" id="tall1" name="tall1" required /> <br />
-      Tall 2<input type="text" id="tall2" name="tall2" required /> <br />
-      <input type="submit" value="Fortsett" id="fortsett" name="fortsett" />
-      <input
-        type="reset"
-        value="Nullstill"
-        id="nullstill"
-        name="nullstill"
-      /><br />
+    <form method="post" action="oppgave2.php">
+      Fornavn:
+      <input type="text" name="fornavn" /><br />
+      <br />
+
+      Etternavn:
+      <input type="text" name="etternavn" /><br />
+      <br />
+
+      Alder:
+      <input type="text" name="alder" /><br />
+      <br />
+
+      <input type="submit" value="Fortsett" />
+      <input type="reset" value="Nullstill" />
     </form>
   </body>
 </html>

@@ -1,12 +1,13 @@
-<?php
+<?php   /* Oppgave 2  */
+/*
+/*  Programmet mottar fornavn, etternavn og alder fra et HTML-skjema ved POST-metoden. 
+/*  Programmet skriver ut en god dag-melding
+/* */
 
-$tall1=$_POST ["tall1"];
-$tall2=$_POST ["tall2"];
+$fornavn=$_POST["fornavn"];
+$etternavn=$_POST["etternavn"];
+$alder=$_POST["alder"]; /* Variable gitte verdier fra feltene i HTML-skjemaet */
 
-$summen=$tall1+$tall2;
-$differansen=$tall1-$tall2;
+print ("God dag $fornavn $etternavn, du er $alder år og like sprek");
 
-print ("Tall 1 er $tall1 <br />");
-print ("Tall 2 er $tall2 <br />");
-print ("Summen er $summen <br />");
-print ("Differansen er $differansen <br />");
+?>
