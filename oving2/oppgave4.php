@@ -31,7 +31,7 @@ if ($gift == "" or $barn == "") {
   print("Du har ikke svart på begge spørsmålene om du er gift og om du har barn.");
 }
 
-elseif (($gift) != "j" and ($gift) != "n") or (($barn) != "j" and ($barn) != "n") {
+elseif (($gift != "j" and ($gift) != "n") or ($barn) != "j" and ($barn) != "n") {
   print("Du har svart noe annet enn j eller n.")
   }
   
