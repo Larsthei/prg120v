@@ -32,7 +32,7 @@ if ($gift == "" or $barn == "") {
 }
 
 elseif (($gift) != "j" and ($gift) != "n") or (($barn) != "j" and ($barn) != "n") {
-  print ("Du har svart noe annet enn j eller n.")
+  print("Du har svart noe annet enn j eller n.")
   }
   
   elseif ($gift == "j" and $barn == "j") {
