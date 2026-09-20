@@ -24,7 +24,7 @@
   }
 
   elseif ($student == "j") {
-    print("Du har svart ja på sprøsmålet om du er student.");
+    print("Du har svart ja på spørsmålet om du er student.");
   }
 
   elseif ($student == "n") {
@@ -35,7 +35,7 @@
     print("Du har ikke svart med j eller n.");
   }
   }
-  
+
   ?>
 
   </body>
