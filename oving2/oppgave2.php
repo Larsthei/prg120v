@@ -1,32 +1,41 @@
-<!DOCTYPE html>
-<html>  
-  <head>
+<!doctype html>
+<html lang="no">
+
+<head>
+    <meta charset="utf-8">
     <title>Oppgave 2</title>
-    </head>
-    <body>
-      <h3>Oppgave 2</h3>
+  </head>
 
-      <form method="post" action="" id="oppgave2" name="oppgave2">
-        Hva er 3 ganger 3 ? <input type="text" id="svar" name="svar" required /> <br />
-        <input type="submit" value="Fortsett" id="fortsett" name="fortsett" />
-        <input type="reset" value="Nullstill" name="nullstill" id="nullstill" /> <br />
-        </form>
-</body>
-</html>
+  <body>
 
-<?php
-if (isset($_POST ["fortsett"]))
-  {
-    $svar=$_POST ["svar"];
+  <form method="post">
+    Er du student (j/n)?
+    <input type="text" name="student">
+    <input type="submit" name="send" value="Svar">
+  </form>
 
-    if ($svar == "9")
-      {
-      print ("Riktig. 3 ganger 3 er 9.");
-      }
-      else
-        {
-          print ("Feil. 3 ganger 3 er ikke $svar. 3 ganger 3 er 9.");
-        }
+  <?php
+  if (isset($_POST["send"])) {
 
+  $student = $_POST["student"];
+
+  if ($student == "") {
+    print("Du har ikke svart på spørsmålet om du er student.");
   }
-?>
+
+  elseif ($student == "j") {
+    print("Du har svart ja på sprøsmålet om du er student.");
+  }
+
+  elseif ($student == "n") {
+    print("Du har svart nei på spørsmålet om du er student.");
+  }
+
+  else {
+    print("Du har ikke svart med j eller n.");
+  }
+
+  ?>
+
+  </body>
+</html>
