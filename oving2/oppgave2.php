@@ -34,7 +34,8 @@
   else {
     print("Du har ikke svart med j eller n.");
   }
-
+  }
+  
   ?>
 
   </body>
