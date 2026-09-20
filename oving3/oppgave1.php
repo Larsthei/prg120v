@@ -1,8 +1,8 @@
 <?php
 
-for ($tall1 =1; $tall <=10; $tall++)
+for ($tall =1; $tall <=10; $tall++)
   {
-    print("$tall1 <br>");
+    print("$tall <br>");
   }
 
   ?>
