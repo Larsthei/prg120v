@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="no">
+
+<head>
+  <meta charset="utf-8">
+  <title>Oppgave 7</title>
+</head>
+
+<body>
+
+<form method="post">
+
+Tall 1:
+<input type="text" name="tall1">
+<br>
+
+Tall 2:
+<input type="text" name="tall2">  
+<br>
+
+Tall 3:
+<input type="text" name="tall3">
+<br>
+
+<input type="submit" name="send" value="Sammenlign">
+
+</form>
+
+<?php
+
+if (isset($_POST["send"])) {
+
+$tall1 = $_POST["tall1"];
+$tall2 = $_POST["tall2"];
+$tall3 = $_POST["tall3"];
+
+print("Tall 1 er $tall1 <br>");
+print("Tall 2 er $tall2 <br>");
+print("Tall 3 er $tall3 <br>");
+
+if ($tall1 < $tall2) {
+  print("Tall 1 er mindre enn Tall 2 <br>");
+}
+elseif ($tall1 == $tall2) {
+  print("Tall 1 er lik Tall 2 <br>");
+}
+else {
+  print("Tall 1 er større enn Tall 2 <br>");
+}
+
+if ($tall1 < $tall3) {
+  print("Tall 1 er mindre enn Tall 3 <br>");
+}
+elseif ($tall1 == $tall3) {
+  print("Tall 1 er lik Tall 3 <br>");
+}
+else {
+  print("Tall 1 er større enn Tall 3 <br>");
+}
+
+if ($tall2 < $tall3) {
+  print("Tall 2 er mindre enn Tall 3 <br>");
+}
+elseif ($tall2 == $tall3) {
+  print("Tall 2 er lik Tall 3 <br>");
+}
+else {
+  print("Tall 2 er større enn Tall 3 <br>");
+}
+
+}
+
+?>
+
+</body>
+</html>
+
+
