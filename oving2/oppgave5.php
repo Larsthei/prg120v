@@ -23,6 +23,7 @@ Regneoperasjon 1-4:
 <br>
 
 <input type="submit" name="send" value="Beregn">
+<br></br>
 
 </form>
 
